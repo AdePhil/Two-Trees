@@ -86,10 +86,9 @@ nav ul li::after{
     padding: 0 20px 0 20px;
 }
 
-nav ul  li a:hover,a:active{
-    background-color: #b98c48;
+nav ul li a:hover,a:active{
     color: #fff;
-    
+    background: #b98c48;
 }
 
 nav ul li a:link,a:visited{
