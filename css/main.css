@@ -1,0 +1,254 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before,*::after{
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+body{
+    font-family: helvetica, arial , sans-serif;
+    margin-top:60px;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    text-transform:uppercase;
+    text-align: center;
+}
+/* Header */
+h1{
+    text-indent: -9999px;
+    background: url("../img/ttc_logo.png") no-repeat;
+    background-position: center center;
+    margin-top: 0px;
+    height: 85px;
+    margin-left: 60px;
+    
+}
+h2{
+    font-size: 64px ;
+    color: #524741; 
+}
+h3{
+    font-size: 48px;
+    color: #524741;
+
+}
+
+/* Welcome */
+.cover-text {
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+}
+.cover-text h2{
+    color: #fff;
+}
+.cover-text h3{
+    font-style: italic;
+    color: #fff;
+    font-family:  georgia,times, serif;
+    text-transform: lowercase;
+}
+.cover{
+    background: url("../img/twotrees.jpg");
+    background-size: cover;
+    height : 650px;
+    width: 100%;
+    margin-right: 0px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+/* navigation */
+
+nav,ul{
+   text-align:center;
+    padding-left: 0;
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li,nav ul{
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+nav ul li::after{
+    content:"|";
+    padding: 0 20px 0 20px;
+}
+
+nav ul  li a:hover,a:active{
+    background-color: #b98c48;
+    color: #fff;
+    
+}
+
+nav ul li a:link,a:visited{
+    color:#5b866b;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/* about us */
+.about-us img {
+    width: 140px;
+    height: 140px;
+}
+.about-us h3{
+    color: #86765c;
+    font-size: 36px;
+}
+
+ .thumbnail{
+    width: 140px;
+    margin: 0px 3% 8% 0px; 
+}
+
+.about-us{
+    margin: 20px;
+}
+.portfolio{
+    background-color: #5b866b;
+    min-height: 550px;
+}
+.portfolio h2{
+    color:#fff;
+    padding-top: 30px;
+    
+}
+.row-margin{
+    margin-bottom: 30px;
+}
+.contact-us img{
+    width: 650px;
+    height: 550px;
+}
+.contact-us{
+    margin-top: 60px;
+}
+
+
+
+
+
+
+input[type="text"],
+textarea{
+    border-radius: 0px !important;
+    margin-bottom: 15px !important;
+    background-color: #ebebeb !important;
+    color: #000 !important;
+    padding: 20px !important;
+}
+
+
+input-placeholder{
+   color: #000 !important;
+}
+
+::-webkit-input-placeholder {
+   color: #000 !important;
+}
+::-moz-input-placeholder {
+   color: #000 !important;
+    opacity:1;
+}
+
+::-o-input-placeholder {
+   color: #000 !important;
+}
+
+::-ms-input-placeholder {
+   color: #000 !important;
+}
+input[type="text"]::-moz-placeholder { color: #000 !important; opacity:1; }
+input[type="text"]:-moz-placeholder { color: #000 !important; opacity:1; }
+
+.circle{
+   
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+}
+
+.small-circle{
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: 95px;
+    background: #fff;
+}
+
+.big-circle{
+    width: 40px;
+    height: 40px;
+    background: #b98c48;
+    cursor: pointer;
+}
+
+.big-circle-left{
+    left: -18px;
+    top: 43px;
+}
+.big-circle-right{
+    right: -18px;
+    top: 43px;
+}
+.portfolio figure{
+    position: relative;
+    width: 235px;
+}
+
+p{
+    color: #222; 
+    font-size: 90%;
+
+}
+
+button{
+    position: relative;
+    font-size: 24px;
+    background-color: #5b866b;
+    width: 150px;
+    height: 55px;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-align: left;
+    padding-left: 20px;
+    
+    
+}
+ button .fa-angle-right{
+    color: #5b866b;
+    font-size: 30px;
+}
+
+.fa-angle-right,.fa-angle-left{
+    color: #fff;
+    font-size: 2.2em;
+}
+
+.social-icons-color{
+    color: #afafaf;
+    padding: 0 0.5rem;
+}
+
+footer{
+    margin: 2.5rem 0 0 10.5rem;
+    text-align: center;
+}
+
