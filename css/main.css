@@ -217,7 +217,7 @@ p{
 
 }
 
-button{
+.button-send{
     position: relative;
     font-size: 24px;
     background-color: #5b866b;
@@ -228,10 +228,13 @@ button{
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     text-align: left;
     padding-left: 20px;
-    
-    
+    transition: all 0.4s ease-in;
 }
- button .fa-angle-right{
+
+.button-send:active{
+    top:3px;
+}
+.button-send .fa-angle-right{
     color: #5b866b;
     font-size: 30px;
 }
@@ -246,8 +249,8 @@ button{
     padding: 0 0.5rem;
 }
 
-footer{
-    margin: 2.5rem 0 0 10.5rem;
+.footer{
+    margin: 2.5rem 0 2.5rem 0;
     text-align: center;
 }
 
