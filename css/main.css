@@ -18,7 +18,7 @@ h1, h2, h3 {
     text-align: center;
 }
 /* Header */
-h1{
+.logo{
     text-indent: -9999px;
     background: url("../img/ttc_logo.png") no-repeat;
     background-position: center center;
@@ -44,13 +44,14 @@ h3{
     margin: 0 auto;
 }
 .cover-text h2{
+    letter-spacing: 0.1em;
     color: #fff;
 }
 .cover-text h3{
     font-style: italic;
-    color: #fff;
     font-family:  georgia,times, serif;
     text-transform: lowercase;
+    color: #fff;
 }
 .cover{
     background: url("../img/twotrees.jpg");
@@ -86,7 +87,7 @@ nav ul li::after{
     padding: 0 20px 0 20px;
 }
 
-nav ul li a:hover,a:active{
+nav ul li a:hover, nav ul li a:active{
     color: #fff;
     background: #b98c48;
 }
@@ -101,6 +102,26 @@ a:hover, a:visited, a:link, a:active
 }
 
 /* about us */
+.about-us-container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    
+}
+.about-us-text{
+    width: 55%;
+}
+.about-us-imgs{
+    width: 43%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    
+}
+
 .about-us img {
     width: 140px;
     height: 140px;
@@ -111,13 +132,27 @@ a:hover, a:visited, a:link, a:active
 }
 
  .thumbnail{
-    width: 140px;
-    margin: 0px 3% 8% 0px; 
+    width: 140px; 
+
 }
 
 .about-us{
     margin: 20px;
 }
+
+.row-margin{
+    margin-bottom: 30px;
+}
+.contact-us img{
+    width: 650px;
+    height: auto;
+}
+.contact-us{
+    margin-top: 60px;
+}
+
+
+/* portfolio */
 .portfolio{
     background-color: #5b866b;
     min-height: 550px;
@@ -127,20 +162,17 @@ a:hover, a:visited, a:link, a:active
     padding-top: 30px;
     
 }
-.row-margin{
-    margin-bottom: 30px;
+.portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+    
 }
-.contact-us img{
-    width: 650px;
-    height: 550px;
+.portfolio-img-container{
+    display: flex;
 }
-.contact-us{
-    margin-top: 60px;
-}
-
-
-
-
 
 
 input[type="text"],
@@ -254,3 +286,52 @@ p{
     text-align: center;
 }
 
+/* Media queries max-width: 560px  */
+
+@media  screen and (max-width: 560px){
+    
+    nav ul li,nav ul{
+        display: block;
+        font-size: 16px;
+    }
+    
+    nav ul li::after{
+        display: none;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    nav ul li a:hover,a:active{
+       color:  #b98c48; 
+        background-color: #fff;
+    }
+    h2{
+        font-size: 38px;
+    }
+    
+    h3{
+        font-size: 24px;
+    }
+    
+    .cover-text {
+        padding: 0 0.5em 0 0.5em;
+    }
+    body{
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+}
+
+/* Media queries max-width: 785px  */
+
+@media screen and (max-width: 785px){
+    
+    .about-us-imgs{
+        width: 100%;
+        margin-top: 10px;
+        
+   }
+    .about-us-text{
+        flex-basis: 100%;
+    }
+}
