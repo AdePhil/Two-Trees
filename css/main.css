@@ -168,10 +168,12 @@ a:hover, a:visited, a:link, a:active
     justify-content: space-around;
     align-items: flex-start;
     align-content: center;
+    margin: 0 -15px;
     
 }
 .portfolio-img-container{
     display: flex;
+    padding: 0 15px;
 }
 
 
