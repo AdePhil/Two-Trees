@@ -90,10 +90,12 @@ nav ul li::after{
 nav ul li a:hover, nav ul li a:active{
     color: #fff;
     background: #b98c48;
+    padding-left: 1em;
 }
 
 nav ul li a:link,a:visited{
     color:#5b866b;
+    transition: all 0.3s ease-out;
 }
 
 a:hover, a:visited, a:link, a:active
